@@ -7,7 +7,7 @@ $(function(){
 function banner(){
   $.ajax({
     type:'get',
-    url: 'http://157.122.54.189:9094/api/public/v1/home/swiperdata',
+    url: 'home/swiperdata',
     dataType:'json',
     success:function(result){
       if(result.meta.status==200){
@@ -27,7 +27,7 @@ function banner(){
 function product(){
   $.ajax({
     type:'get',
-    url: 'http://157.122.54.189:9094/api/public/v1/home/goodslist',
+    url: 'home/goodslist',
     dataType:'json',
     success:function(result){
       var proHtml = template('ProTemp',result)

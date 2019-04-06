@@ -1,82 +1,75 @@
 .layout {
   width: 100vw;
-  max-width: 640px;
   height: 100vh;
+  max-width: 640px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.layout .pyg_header {
+.pyg_header {
   height: 45px;
+  background-color: #eee;
   padding: 4px;
 }
-.layout .pyg_content {
+.pyg_content {
   flex: 1;
   overflow: scroll;
 }
-.layout .pyg_content .pyg_nav {
-  display: flex;
+.pyg_footer {
+  height: 45px;
+}
+.pyg_nav {
   padding: 15px;
+  display: flex;
   background-color: #fff;
 }
-.layout .pyg_content .pyg_nav > a {
+.pyg_nav > a {
   flex: 1;
   text-align: center;
-  color: #333;
   font-size: 13px;
+  color: #333;
 }
-.layout .pyg_content .pyg_nav > a > img {
+.pyg_nav > a > img {
   width: 50%;
   display: inline-block;
 }
-.layout .pyg_content .goodsList {
+.goodsList {
   padding: 10px;
 }
-.layout .pyg_content .goodsList .proBox {
+.goodsList .proBox {
   width: 100%;
   padding-bottom: 5px;
 }
-.layout .pyg_content .goodsList .proBox > img {
+.goodsList .proBox > img {
   width: 100%;
   display: block;
 }
-.layout .pyg_content .goodsList .proBox > .sBox {
-  float: left;
+.goodsList .proBox > .sBox {
   width: 49%;
   margin-top: 10px;
+  float: left;
   background-color: #fff;
 }
-.layout .pyg_content .goodsList .proBox > .sBox > .pyg_good {
+.goodsList .proBox > .sBox > .pyg_good {
   width: 100%;
 }
-.layout .pyg_content .goodsList .proBox > .sBox > .pyg_good > img {
+.goodsList .proBox > .sBox > .pyg_good > img {
   width: 100%;
-}
-.layout .pyg_content .goodsList .proBox > .sBox > .pyg_good > .pyg_desc {
-  color: #333;
-  font-size: 14px;
-  margin: 5px 0;
-}
-.layout .pyg_content .goodsList .proBox > .sBox > .pyg_good > .pyg_price {
-  color: red;
-}
-.layout .pyg_content .goodsList .proBox > .sBox > .pyg_btncate {
-  width: 80%;
-  margin: 5px auto;
   display: block;
 }
-.layout .pyg_content .goodsList .proBox > div:nth-of-type(even) {
-  margin-left: 2%;
-}
-.layout .pyg_footer {
-  height: 45px;
-}
-.layout .pyg_footer .mui-bar {
-  background-color: #fff;
-}
-.layout .pyg_footer .mui-bar > a {
-  color: #000;
-}
-.layout .pyg_footer .mui-bar > a > div {
+.goodsList .proBox > .sBox > .pyg_good > .pyg_desc {
+  color: #333;
   font-size: 13px;
+  margin: 5px 0;
+}
+.goodsList .proBox > .sBox > .pyg_good > .pyg_price {
+  color: red;
+}
+.goodsList .proBox > .sBox > .pyg_btncate {
+  width: 80%;
+  display: block;
+  margin: 5px auto;
+}
+.goodsList .proBox > .sBox:nth-of-type(even) {
+  margin-left: 2%;
 }

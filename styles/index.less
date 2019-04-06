@@ -1,82 +1,70 @@
-// @import'./reset.less';
+@import './common.less';
 
-.layout{
-  width: 100vw;
-  max-width: 640px;
-  height: 100vh;
-  margin: 0 auto;
+
+.pyg_nav {
+  padding: 15px;
   display: flex;
-  flex-direction: column;
-  .pyg_header{
-    height: 45px;
-    padding: 4px;
-  }
-  .pyg_content{
+  background-color: #fff;
+
+  >a {
     flex: 1;
-    overflow: scroll;
-    .pyg_nav{
-      display: flex;
-      padding: 15px;
-      background-color: #fff;
-      >a{
-        flex: 1;
-        text-align: center;
-        color: #333;
-        font-size: 13px;
-        >img{
-          width: 50%;
-          display: inline-block;
-        }
-      }
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+
+    >img {
+      width: 50%;
+      display: inline-block;
     }
-    .goodsList{
-      padding: 10px;
-      .proBox{
+  }
+}
+
+.goodsList {
+  padding: 10px;
+
+  .proBox {
+    width: 100%;
+    padding-bottom: 5px;
+
+    >img {
+      width: 100%;
+      display: block;
+    }
+
+    >.sBox {
+      width: 49%;
+      margin-top: 10px;
+      float: left;
+      background-color: #fff;
+
+      >.pyg_good {
         width: 100%;
-        padding-bottom: 5px;
-        >img{
+
+        >img {
           width: 100%;
           display: block;
         }
-        >.sBox{
-          float: left;
-          width: 49%;
-          margin-top: 10px;
-          background-color: #fff;
-          >.pyg_good {
-            width: 100%;
-            >img{
-              width: 100%;
-            }
-            >.pyg_desc{
-              color: #333;
-              font-size: 14px;
-              margin: 5px 0;
-            }
-            >.pyg_price{
-              color: red;
-            }
-          }
-          >.pyg_btncate{
-            width: 80%;
-            margin: 5px auto;
-            display: block;
-          }
+
+        >.pyg_desc {
+          color: #333;
+          font-size: 13px;
+          margin: 5px 0;
         }
-        >div:nth-of-type(even){
-          margin-left: 2%;
+
+        >.pyg_price {
+          color: red;
         }
+      }
+
+      >.pyg_btncate {
+        width: 80%;
+        display: block;
+        margin: 5px auto;
       }
     }
-  }
-  .pyg_footer{
-    height: 45px;
-    .mui-bar {
-      background-color: #fff;
-      >a{
-        color: #000;
-        }
-      }
+
+    >.sBox:nth-of-type(even) {
+      margin-left: 2%;
     }
   }
 }
