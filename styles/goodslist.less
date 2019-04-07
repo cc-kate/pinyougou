@@ -1,0 +1,90 @@
+@import './common.less';
+
+#header{
+  background:#0094ff;
+  >h1{
+    color: #fff;
+  }
+  >a{
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.pyg_content{
+  position: relative;
+  .mui-scroll-wrapper{
+    background-color: #fff;
+  }
+  .search_bar{
+    height: 40px;
+    .searchBox{
+      height: 40px;
+      padding: 5px;
+      position: relative;
+      >.query_txt {
+        height: 30px;
+        width: 100%;
+        padding: 0;
+        border: none;
+        border: 1px solid #ccc;
+        margin-bottom: 0;
+      }
+      >.query_btn{
+        width: 60px;
+        height: 30px;
+        background-color: skyblue;
+        line-height: 30px;
+        text-align: center;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 0;
+      }
+    }
+  }
+  .searchList{
+    padding: 5px;
+    ul{
+      li{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px;
+        color: #666;
+        padding: 5px;
+      }
+    }
+  }
+  .goodslist {
+    >li{
+      width: 100%;
+      margin-bottom: 5px;
+      >a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+        padding: 5px 0;
+        > div{
+          width: 50%;
+          float: left;
+          >img{
+            width: 70%;
+            display: block;
+            margin:0 auto;
+          }
+        }
+        >div:nth-of-type(2){
+          float: right;
+          padding: 20px 0;
+          >span{
+            margin-bottom: 40px;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@ $(function(){
   })
 
   // 基准路径
-  const baseURL = 'http://157.122.54.189:9094/api/public/v1/'
+  const baseURL = 'http://140.143.222.79:8899/api/public/v1/'
   // 添加zepto拦截器：它的作用是可以让每个ajax请求都经过这个函数进行处理
   // beforeSend:每次发送ajax请求都必须经过的处理函数
   $.ajaxSettings.beforeSend = function(xhr,obj){  //xhr 异步对象
