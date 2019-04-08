@@ -1,0 +1,123 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.pyg_header {
+  height: 45px;
+  background-color: #eee;
+  padding: 4px;
+}
+.pyg_content {
+  flex: 1;
+  overflow: scroll;
+}
+.pyg_footer {
+  height: 45px;
+}
+.loadding::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .5;
+  content: "";
+  z-index: 100;
+}
+.loadding::after {
+  font: normal normal normal 14px/1 FontAwesome;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 100px;
+  color: #0094ff;
+  content: "\f013";
+  z-index: 101;
+  animation: fa-spin 1s infinite linear;
+}
+.pyg_content {
+  position: relative;
+}
+.pyg_content .mui-scroll-wrapper {
+  top: 45px;
+  bottom: 5px;
+  background: #fff;
+}
+.pyg_content .mui-scroll-wrapper .mui-content {
+  background: #fff;
+}
+.pyg_content .mui-scroll-wrapper .mui-content #item2 {
+  padding: 5px;
+}
+.pyg_content .mui-scroll-wrapper .mui-content #item2 div {
+  background-color: #efeff4;
+  color: #333;
+  padding-left: 5px;
+}
+.pyg_content .mui-scroll-wrapper .mui-content #item2 div h4 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 40px;
+  border-bottom: 1px solid #333;
+  margin: 0;
+}
+.pyg_content .mui-scroll-wrapper .mui-content #item2 div > div {
+  display: flex;
+  line-height: 25px;
+  color: #666;
+  font-size: 13px;
+}
+.pyg_content .mui-scroll-wrapper .mui-content #item2 div > div > span:nth-of-type(1) {
+  flex: 2;
+}
+.pyg_content .mui-scroll-wrapper .mui-content #item2 div > div > span:nth-of-type(2) {
+  flex: 4;
+}
+.pyg_content .pyg_txt {
+  padding: 10px;
+}
+.pyg_content .pyg_txt .goods_name {
+  font-size: 15px;
+}
+.pyg_content .pyg_txt .goods_price {
+  line-height: 50px;
+  color: orange;
+  font-size: 20px;
+}
+.pyg_content .pyg_txt ul {
+  width: 100%;
+}
+.pyg_content .pyg_txt ul > li {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  line-height: 34px;
+  font-size: 14px;
+  display: flex;
+}
+.pyg_content .pyg_txt ul > li > span:nth-of-type(1) {
+  color: #aaa;
+  flex: 1;
+}
+.pyg_content .pyg_txt ul > li > span:nth-of-type(2) {
+  flex: 4;
+}
+.pyg_footer .mui-bar {
+  background-color: #fff;
+}
+.pyg_footer .mui-bar-tab .mui-tab-item {
+  color: #333;
+}
+.pyg_footer .mui-bar-tab a:nth-of-type(-n+3) {
+  border-right: 1px solid #ccc;
+}
+.pyg_footer .mui-bar-tab .mui-btn {
+  top: 0;
+  color: #fff;
+  font-size: 13px;
+}

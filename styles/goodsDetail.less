@@ -1,0 +1,88 @@
+@import './common.less';
+
+.pyg_content{
+  position: relative;
+  .mui-scroll-wrapper{
+    top: 45px;
+    bottom: 5px;
+    background: #fff;
+    .mui-content{
+      background: #fff;
+      #item2{
+        padding:5px;
+        div{
+          background-color: #efeff4;
+          color: #333;
+          padding-left: 5px;
+          h4{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 40px;
+            border-bottom: 1px solid #333;
+            margin: 0;
+          }
+          >div{
+            display: flex;
+            line-height: 25px;
+            color: #666;
+            font-size: 13px;
+            >span:nth-of-type(1){
+              flex: 2;
+            }
+            >span:nth-of-type(2) {
+              flex: 4;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pyg_txt{
+    padding: 10px;
+    .goods_name{
+      font-size: 15px;
+    }
+    .goods_price{
+      line-height: 50px;
+      color: orange;
+      font-size: 20px;
+    }
+    ul{
+      width: 100%;
+      >li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        line-height: 34px;
+        font-size: 14px;
+        display: flex;
+        >span:nth-of-type(1){
+          color: #aaa;
+          flex: 1;
+        }
+        >span:nth-of-type(2) {
+          flex: 4;
+        }
+      }
+    }
+  }
+}
+
+
+.pyg_footer{
+  .mui-bar{
+    background-color: #fff;
+  }
+   .mui-bar-tab{
+    .mui-tab-item{
+      color: #333;
+    }
+    a:nth-of-type(-n+3){
+      border-right:1px solid #ccc;
+    }
+    .mui-btn{
+      top:0;
+      color: #fff;
+      font-size: 13px;
+    }
+   } 
+}
