@@ -1,0 +1,107 @@
+@import './common.less';
+
+.divTitle{
+  margin: 20px 0 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+.pyg_content{
+  position: relative;
+  .mui-scroll-wrapper {
+    top: 45px;
+    bottom: 5px;
+  }
+  .pyg_address{
+    margin: 0 10px;
+    >div:nth-of-type(1){
+      .divTitle
+    }
+    >div:nth-of-type(2) {
+      display: flex;
+      background: #fff;
+      padding: 4px 0;
+      .left{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right{
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        span{
+          color: #888;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .totalPrice{
+    margin: 0 10px;
+    >div:nth-of-type(1){
+      .divTitle
+    }
+    >div:nth-of-type(2){
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      div{
+        padding-top: 6px;
+        padding-left: 5px;
+        span {
+          color: red;
+        }
+      }
+    }
+  }
+  .pyg_order{
+    margin: 0 10px;
+    >div:nth-of-type(1){
+      .divTitle
+    }
+    .orderList{
+      background: #fff;
+      .orderSingle{
+        display: flex;
+        padding: 10px;
+        border-bottom: 1px dashed #ccc;
+        .mui-checkbox{
+          flex: 2;
+          input {
+            margin-top: 40px;
+         }
+        }
+        .oImg{
+          flex: 3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 90%;
+            display: block;
+          }
+        }
+        .pro-msg{
+          flex: 6;
+          .pro_name{
+            font-size: 13px;
+            color: #666;
+          }
+          .mui-numbox{
+            margin: 10px 0;
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+.eleToggle{
+  .pyg_del,.mui-checkbox{
+    display: none;
+  }
+}
