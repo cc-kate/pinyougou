@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../styles/base.css">
   <link rel="stylesheet" href="../lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="../lib/mui/css/mui.picker.css">
+  <link rel="stylesheet" href="../lib/mui/css/mui.poppicker.css">
   <link rel="stylesheet" href="../lib/fontawesome/css/font-awesome.css">
   <link rel="stylesheet" href="../styles/cart.css">
   <title>Document</title>
@@ -32,7 +34,8 @@
               </div>
               <div class="right">
                 <div>默认地址</div>
-                <span>广州市天河区</span>
+                <span class="pygAddress">广州市天河区</span>
+                <button type="button" class="mui-btn mui-btn-primary selectAddr">单击选择</button>
               </div>
             </div>
           </div>
@@ -40,7 +43,7 @@
             <div>总价</div>
             <div>
               <div>总价：<span class="price">￥ 5555</span></div>
-              <button class="mui-btn mui-btn-blue mui-btn-link">生成订单</button>
+              <button class="mui-btn mui-btn-blue mui-btn-link createOrder">生成订单</button>
             </div>
           </div>
           <div class="pyg_order">
@@ -97,10 +100,13 @@
     {{/each}}
   </script>
   <script src="../lib/mui/js/mui.js"></script>
+  <script src="../lib/mui/js/mui.picker.js"></script>
+  <script src="../lib/mui/js/mui.poppicker.js"></script>
   <script src="../lib/zepto/zepto.js"></script>
   <script src="../lib/arttemplate/template-web.js"></script>
   <script src="../lib/iscroll/iscroll.js"></script>
   <script src="../js/common.js"></script>
+  <script src="../data/citys.js"></script>
   <script src="../js/cart.js"></script>
 </body>
 

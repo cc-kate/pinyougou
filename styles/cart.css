@@ -82,6 +82,12 @@
   color: #888;
   font-size: 13px;
 }
+.pyg_content .pyg_address > div:nth-of-type(2) .right .selectAddr {
+  width: 80px;
+  position: absolute;
+  right: 10px;
+  height: 42px;
+}
 .pyg_content .totalPrice {
   margin: 0 10px;
 }
@@ -101,6 +107,9 @@
 }
 .pyg_content .totalPrice > div:nth-of-type(2) div span {
   color: red;
+}
+.pyg_content .totalPrice > div:nth-of-type(2) .createOrder {
+  font-size: 16px;
 }
 .pyg_content .pyg_order {
   margin: 0 10px;
@@ -145,6 +154,7 @@
   margin: 10px 0;
 }
 .eleToggle .pyg_del,
-.eleToggle .mui-checkbox {
+.eleToggle .mui-checkbox,
+.eleToggle .pyg_num {
   display: none;
 }

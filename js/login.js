@@ -27,7 +27,7 @@ $(function(){
           if(re){
             location.href = re
           }else{
-            location.href = './index.html'
+            location.href = '../index.html'
           }
         }else{
           mui.toast(result.meta.msg)
